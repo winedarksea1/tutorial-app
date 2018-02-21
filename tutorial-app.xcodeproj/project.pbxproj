@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C05AB277203A5AD100F43771 /* VideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C05AB276203A5AD100F43771 /* VideoCell.m */; };
+		C07228EA203DF47A009CA845 /* VideoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C07228E9203DF47A009CA845 /* VideoVC.m */; };
+		C0E3CE97203B815B00FE7A71 /* Video.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E3CE96203B815B00FE7A71 /* Video.m */; };
 		C0E8F19D2038BADD001B79DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E8F19C2038BADD001B79DA /* main.m */; };
 		C0E8F1A02038BADD001B79DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E8F19F2038BADD001B79DA /* AppDelegate.m */; };
 		C0E8F1A32038BADD001B79DA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E8F1A22038BADD001B79DA /* ViewController.m */; };
@@ -17,6 +20,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C05AB275203A5AD100F43771 /* VideoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoCell.h; sourceTree = "<group>"; };
+		C05AB276203A5AD100F43771 /* VideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoCell.m; sourceTree = "<group>"; };
+		C07228E8203DF47A009CA845 /* VideoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoVC.h; sourceTree = "<group>"; };
+		C07228E9203DF47A009CA845 /* VideoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoVC.m; sourceTree = "<group>"; };
+		C0E3CE95203B815B00FE7A71 /* Video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
+		C0E3CE96203B815B00FE7A71 /* Video.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Video.m; sourceTree = "<group>"; };
 		C0E8F1982038BADD001B79DA /* tutorial-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tutorial-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0E8F19C2038BADD001B79DA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C0E8F19E2038BADD001B79DA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -42,6 +51,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C05AB274203A5AA200F43771 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C05AB275203A5AD100F43771 /* VideoCell.h */,
+				C05AB276203A5AD100F43771 /* VideoCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		C0E3CE94203B814600FE7A71 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C0E3CE95203B815B00FE7A71 /* Video.h */,
+				C0E3CE96203B815B00FE7A71 /* Video.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C0E3CE98203B83B500FE7A71 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C0E8F1A12038BADD001B79DA /* ViewController.h */,
+				C0E8F1A22038BADD001B79DA /* ViewController.m */,
+				C07228E8203DF47A009CA845 /* VideoVC.h */,
+				C07228E9203DF47A009CA845 /* VideoVC.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		C0E8F18F2038BADC001B79DA = {
 			isa = PBXGroup;
 			children = (
@@ -61,11 +99,12 @@
 		C0E8F19A2038BADD001B79DA /* tutorial-app */ = {
 			isa = PBXGroup;
 			children = (
+				C0E3CE94203B814600FE7A71 /* Model */,
+				C05AB274203A5AA200F43771 /* View */,
+				C0E3CE98203B83B500FE7A71 /* Controller */,
 				C0E8F1B22038BB10001B79DA /* Services */,
 				C0E8F19E2038BADD001B79DA /* AppDelegate.h */,
 				C0E8F19F2038BADD001B79DA /* AppDelegate.m */,
-				C0E8F1A12038BADD001B79DA /* ViewController.h */,
-				C0E8F1A22038BADD001B79DA /* ViewController.m */,
 				C0E8F1A42038BADD001B79DA /* Main.storyboard */,
 				C0E8F1A72038BADD001B79DA /* Assets.xcassets */,
 				C0E8F1A92038BADD001B79DA /* LaunchScreen.storyboard */,
@@ -165,7 +204,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0E8F1A32038BADD001B79DA /* ViewController.m in Sources */,
+				C05AB277203A5AD100F43771 /* VideoCell.m in Sources */,
 				C0E8F1B52038BB39001B79DA /* HTTPService.m in Sources */,
+				C0E3CE97203B815B00FE7A71 /* Video.m in Sources */,
+				C07228EA203DF47A009CA845 /* VideoVC.m in Sources */,
 				C0E8F1A02038BADD001B79DA /* AppDelegate.m in Sources */,
 				C0E8F19D2038BADD001B79DA /* main.m in Sources */,
 			);
@@ -324,6 +366,7 @@
 				C0E8F1B12038BADD001B79DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
